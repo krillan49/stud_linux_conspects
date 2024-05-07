@@ -1,4 +1,4 @@
-echo "                                         Ubuntu Gnome. GTK"
+echo "                                           Gnome. GTK"
 
 # https://help.ubuntu.com/stable/ubuntu-help/index.html
 
@@ -7,6 +7,7 @@ echo "                                         Ubuntu Gnome. GTK"
 # gnome-look.org   - сайт где можно скачать темы, тоесть весь внешний вид системы (как их установить описано в их документации там же)  https://www.youtube.com/watch?v=Nn5jaVjRUgY   (12-20+)
 
 # Ubuntu по умолчанию поставляется с окружением рабочего стола Gnome. Но можно установить и другие
+
 
 # GTK это набор библиотек для отрисовки графического интерфейса, он написан на Си и используется в окружениях рабочего стола для Linux, напримсер в Gnome, Xfce, Cinnamon, Mate. Но Kde plasma уже используется QT. Который как по получше и современнее. Плюс он поддерживает ещё и Android.
 

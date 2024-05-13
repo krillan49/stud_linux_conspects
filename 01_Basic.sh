@@ -21,6 +21,9 @@ echo "                                            Linux"
 # Андроид также является дистрибутивом, что создан на основе ядра Линукс.
 
 
+# https://www.youtube.com/watch?v=xBiTsGkQgCo     - Как установить и настроить Ubuntu MATE Linux на virtualbox
+
+
 
 
 

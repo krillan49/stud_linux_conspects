@@ -17,8 +17,13 @@ for (( i = 0; i < ${#str}; ++i)); do
   echo "${str:$i:1}"
 done
 
+# swapcase В оболочке bashдля этого есть специальный оператор:
+in=AbCdE
+out=${in~~} #=> aBcDe
+
 # реверсировать строку
 echo "$1" | rev
+FOO=$(echo $str | rev);
 
 
 # Получить 1й символ строки
@@ -57,7 +62,7 @@ echo ${arr[1]}   #=> john@home.com
 
 
 # Реверсировать строку
-echo "$IN" | rev    #=> cba
+echo "$str" | rev    #=> cba
 
 # Сложение строк через интерполяцию
 foo="Hello"

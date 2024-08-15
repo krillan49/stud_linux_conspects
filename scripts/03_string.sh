@@ -77,6 +77,8 @@ echo "$A" #=> "X Y Z"
 echo "BAAACCC" | tr 'ABC' '123' #=> 2111333
 
 # to lower case
+echo $1 | tr [A-Z] [a-z]
+echo $1 | tr 'a-z' 'A-Z'
 echo "AbC" | tr '[:upper:]' '[:lower:]'  #=> 'abc'
 echo "AbC" | awk '{print tolower($0)}'  #=> 'abc'
 
@@ -90,6 +92,49 @@ repeatChar() {
 repeatChar abc 3 #=> abcabcabc
 
 
+# Сортировка строки:
+# вставим в строку пробелы между каждым символом
+str=''
+for (( i = 0; i < ${#1}; ++i)); do
+  str="$str ${1:$i:1}"
+done
+# Рассплитить строку в массив по пробелам
+a=(${str// / })
+# Сортировка массива(передаем цикл в sort)
+b=($(for s in ${a[@]}; do echo $s; done | sort))
+# Удалим пробелы между символами
+
+
+# ПОСЧИТАТЬ ЧИСЛО УНИКАЛЬНЫХ СИМВОЛОВ ЧТО ПОВТОРЯЮТСЯ В СТРОКЕ
+# вставим в строку пробелы между каждым символом
+str=''
+for (( i = 0; i < ${#1}; ++i)); do
+  str="$str ${1:$i:1}"
+done
+# Рассплитить строку в массив по пробелам
+a=(${str// / })
+# Сортировка массива(передаем цикл в sort)
+b=($(for s in ${a[@]}; do echo $s; done | sort))
+# Преобразуем массив в строку добавив пробелы только между разными символами
+str=''
+last=''
+for el in "${b[@]}"; do
+  if [ "$el" == "$last" ]; then
+    str+="$el"
+  else
+    str+=" $el"
+  fi
+  last="$el"
+done
+# Разобьем строку в массив и сосчитаем число элементов длинной больше 1
+a=(${str// / })
+count=0
+for el in "${a[@]}"; do
+  if [ "${#el}" -gt 1 ]; then
+    let count+=1
+  fi
+done
+echo $count
 
 
 

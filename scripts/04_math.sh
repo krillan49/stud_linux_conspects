@@ -72,6 +72,8 @@ if (( $(echo "$result1 > $result2" | bc -l) )); then
 if (( $(echo "$result1 $result2" | awk '{print ($1 > $2)}') )); then
 # bc выведет 0 или 1, а (( )) интерпретирует их как false или true соответственно.
 
+if [[ $(echo "$1 > 0 && $3 < $1 && $2 < 1 && $2 > 0" | bc -l) == 1 ]]; then # тут 1 в конце синоним тру
+
 
 # Подстановка в переменную
 p1=$(echo "$p0 + $p0 * $percent * 0.01 + $aug" | bc -l)

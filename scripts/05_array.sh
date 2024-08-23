@@ -30,7 +30,7 @@ done
 arr=("kiwi" "pear" "kiwi" "banana" "melon")
 res=()
 size=$(( ${#arr[@]} ))
-for (( i=0; i<=$size; i++ )); do
+for (( i=0; i<$size; i++ )); do
   res[$i]="${arr[$((size-i))]}"
 done
 echo ${res[@]} #=> melon banana kiwi pear kiwi

@@ -79,8 +79,13 @@ echo '                                            curl (Debian)'
 
 
 # Дополнительно curl умеет посылать HTTP запросы
-# $ curl -X POST http://localhst:3000/questions > result.txt    - посылаем запрос на свой же локалхост и записываем ответ в фаил
 # -X   - флаг позволяет выбрать метод запроса
+# -F   - флаг позволяет отправить поля и их значения как буд-то от формы
+# $ curl -X POST http://localhst:3000/questions > result.txt    - посылаем запрос на свой же локалхост и записываем ответ в фаил
+# $ curl -X POST http://localhst:3000/questions -F 'body=Some text' -F 'user_id=1'      - с переменными и значениями как от формы
+# $ curl -X PATCH http://localhst:3000/questions/1 -F 'body=Some text' -F 'user_id=1'   - с методом PATCH
+# $ curl -X DELETE http://localhst:3000/questions/1                                     - с методом DELETE
+
 
 
 

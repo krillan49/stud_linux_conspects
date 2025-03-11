@@ -78,6 +78,11 @@ echo '                                            curl (Debian)'
 # $ sudo aptitude install curl      -  либо с помощью менеджера пакетов aptitude
 
 
+# Дополнительно curl умеет посылать HTTP запросы
+# $ curl -X POST http://localhst:3000/questions > result.txt    - посылаем запрос на свой же локалхост и записываем ответ в фаил
+# -X   - флаг позволяет выбрать метод запроса
+
+
 
 echo "                                    Пакетный менеджер yum (Red Hat)"
 

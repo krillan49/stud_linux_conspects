@@ -2,11 +2,16 @@ echo '                                              Far'
 
 # https://github.com/elfmz/far2l  - установка Far на Линукс
 
-# Для Linux семейства Ubuntu установка обычно сводится к двум командам в терминале:
+
+# Midnight Commander:
 # $ sudo apt-get update
 # $ sudo apt-get install mc
-
 # (после этого можно вводить “mc”, чтобы запустился Midnight Commander)
+
+
+# Far (far2l):
+# $ apt-get install far2l
+# $ rm ~/.config/far2l/font      - чтобы изменить шрифт нужно удалить данный фаил
 
 
 

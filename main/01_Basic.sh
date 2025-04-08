@@ -1,8 +1,8 @@
 echo "                                              Linux"
 
-# https://www.youtube.com/watch?v=ztOyQXiBin0                     - экзамен LPI Linux Essentials
+# https://www.youtube.com/watch?v=ztOyQXiBin0                       - экзамен LPI Linux Essentials
 
-# https://itproger.com/news/kakoy-linux-distributiv-vibrat-top-7  - описание популярных дистрибутивов
+# https://itproger.com/news/kakoy-linux-distributiv-vibrat-top-7    - описание популярных дистрибутивов
 
 
 # Unix – семейство многозадачных и многопользовательских операционных систем. Unix позволяет одновременно работать сразу с несколькими терминалами, разным людям, при этом каждый из них может выполнять свои действия, что будут использовать ресурсы одного общего ПК.
